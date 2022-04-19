@@ -1,29 +1,4 @@
-/** Let's assume a simple schema consisting of two tables.
-
-STATISTICS for COVID-19 daily statistics like confirmed cases, deaths, etc.
-DEMOGRAPHICS with addition per-country data like population, area, population density and more
-STATISTICS
-This table could have columns such as
-
-country_id: Identifies the country by ISO code
-dt: the date for the reported number
-confirmed_cases: number of confirmed cases
-deaths: number of confirmed deaths
-...
-Data could come from a source like https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases or https://www.who.int/emergencies/diseases/novel-coronavirus-2019
-
-DEMOGRAPHICS
-This table could have columns such as
-
-country_id: identifies the country by ISO code
-country_name: the full country name
-population: total population
-area: total area
-density: population density
-...
-There could be many more columns. See https://unstats.un.org/unsd/demographic-social/index.cshtml for a possible data source. **/ 
-
-use Covid20;
+/se Covid20;
 -- Data Cleaning: 
 -- Deleting non useful  records where location
 -- is defined by continent and continent column is empty 
@@ -159,7 +134,7 @@ group by date;
 
 
 
--- Tracking new vaccinations in France, Australia and the US
+-- Tracking new vaccinations in France and Australia 
 -- Showing Percentage of Population that has recieved at least one Covid Vaccine 
 
 select date, location, population, new_vaccinations, new_vaccinations/population as vaccination_rate 
