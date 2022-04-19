@@ -1,5 +1,7 @@
 # Covid Dataset Analysis using SQL and Tableau     
-This repository provides some analysis and insights on the **COVID-19** time series dataset using **SQL** to explore our data, identify tendencies and finally visualize our results using **Tableau**.   
+This repository provides some analysis and insights on the **COVID-19** time series dataset using **SQL** to explore our data, identify tendencies and finally visualize our results using **Tableau**.  
+![Dashboard2](https://user-images.githubusercontent.com/54501663/164001350-a736f747-a41b-41a5-8260-fd71eeb9a110.png)
+
 ## Steps
  1. Data wrangling : Removing empty records and altering datatype eg. nvarchar to float
  2.  Querying and exploring data using SQL on SQL SERVER 
@@ -18,7 +20,11 @@ It contains information about countries: Cases, Deaths, Hospitalization,  Demogr
 | new_deaths|daily number of death cases  |
 
 ## Insights 
-Our exploratory analysis helps getting some insights such as
+Our exploratory analysis helps getting some insights such as :
+![dashboard](https://user-images.githubusercontent.com/54501663/164002792-b9698900-a709-486b-9512-4cfa23bf490d.png)
+
+
+
 ## Sample queries 
 All queries [here.](https://github.com/aouataf-djillani/Covid-Dataset-Analysis-SQL-Tableau/blob/master/DataExploring.sql)
 Current Infection rate around the world 
